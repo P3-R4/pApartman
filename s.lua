@@ -24,8 +24,3 @@ AddEventHandler('onServerResourceStart', function(resourceName)
         end
     end
 end)
-
-ESX.RegisterServerCallback('getaj', function(source,cb)
-    local xPlayer = ESX.GetPlayerFromId(source)
-    cb(xPlayer.getIdentifier())
-end)
