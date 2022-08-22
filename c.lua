@@ -15,10 +15,7 @@ function izadji()
     SetEntityCoords(PlayerPedId(), vector4(-777.0797, 316.5905, 85.6627, 183.6864), true,false,true)
 end
 function sef()
-	ESX.TriggerServerCallback('getaj', function(x) 
-		print(x)
-		exports.ox_inventory:openInventory('stash','apartmansef')
-	end)
+	exports.ox_inventory:openInventory('stash','apartmansef')
 end
 exports.qtarget:AddBoxZone("apartman", vector3(-776.12, 313.79, 85.7), 5, 1.0, {
 	name="apartman",
