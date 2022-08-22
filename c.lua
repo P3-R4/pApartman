@@ -17,7 +17,7 @@ end
 function sef()
 	ESX.TriggerServerCallback('getaj', function(x) 
 		print(x)
-		exports.ox_inventory:openInventory('stash', {id='apartmansef', owner= x})
+		exports.ox_inventory:openInventory('stash','apartmansef')
 	end)
 end
 exports.qtarget:AddBoxZone("apartman", vector3(-776.12, 313.79, 85.7), 5, 1.0, {
